@@ -118,6 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CadenaConexionLocal" xml:space="preserve">
-    <value>Data Source=DESKTOP-KBGFPSF\SQLEXPRESS;Initial Catalog=FacturacionDB1;Integrated Security=True;Trust Server Certificate=True</value>
+    <value>Data Source=DESKTOP-TAPALGC\SQLEXPRESS;Initial Catalog=FacturacionDB01;Integrated Security=True;Trust Server Certificate=True</value>
   </data>
 </root>

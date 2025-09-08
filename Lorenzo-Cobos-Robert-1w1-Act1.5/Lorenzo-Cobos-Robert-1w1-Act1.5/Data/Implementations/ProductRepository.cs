@@ -14,14 +14,55 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Data.Implementations
     {
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                List<SpParameter> param = new List<SpParameter>()
+        {
+            new SpParameter() { Name = "@codigo", Valor = id }
+        };
+
+                DataHelper.GetInstance().ExecuteSpDml("SP_BAJA_ARTICULO", param);
+                return true; // si llega hasta acá, se borró o no existía pero no hubo error
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error en Delete: {ex.Message}");
+                return false; // solo devuelve false si realmente falló
+            }
         }
 
-     
+
+
 
         public Product GetById(int id)
         {
-            throw new NotImplementedException();
+            List<SpParameter> param = new List<SpParameter>()
+            {
+                new SpParameter()
+                {
+                    Name = "@codigo",
+                    Valor = id
+                }
+            };
+
+           
+            var dt = DataHelper.GetInstance().ExecuteSPQuery("SP_RECUPERAR_PRODUCTO_POR_CODIGO", param);
+
+            
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                Product p = new Product()
+                {
+                    IdProduct = (int)dt.Rows[0]["codigo"],
+                    Name = (string)dt.Rows[0]["n_producto"],
+                    UnitPrice = (decimal)dt.Rows[0]["precio"],
+                   
+                };
+
+                return p;
+            }
+
+            return null;
         }
 
         public bool Save(Product product)
@@ -31,11 +72,10 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Data.Implementations
                 new SpParameter("@codigo", product.IdProduct),
                 new SpParameter("@nombre", product.Name),
                 new SpParameter("@precio", product.UnitPrice),          
-                new SpParameter("@stock", product.Stock),
-                new SpParameter("@activo", product.Active ? 1 : 0)  
+                
             };
 
-            return DataHelper.GetInstance().ExecuteSpDml("SP_GUARDAR_PRODUCTO", param);
+            return DataHelper.GetInstance().ExecuteSpDml("SP_GUARDAR_ARTICULO", param);
         }
 
         public List<Product> GetAll()
@@ -51,8 +91,7 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Data.Implementations
                 Product p = new Product();
                 p.IdProduct = (int)row["codigo"];
                 p.Name = (string)row["n_producto"];
-                p.Stock = (int)row["stock"];
-                p.Active = ((int)row["esta_activo"]) == 1;
+              
 
 
                 // Manejamos el valor nulo para el precio

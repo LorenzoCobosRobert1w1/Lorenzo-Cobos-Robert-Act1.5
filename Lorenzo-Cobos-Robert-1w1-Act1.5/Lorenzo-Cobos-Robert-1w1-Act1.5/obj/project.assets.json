@@ -1604,11 +1604,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\soylo\\Desktop\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj",
+      "projectUniqueName": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj",
       "projectName": "Proyecto1.5",
-      "projectPath": "C:\\Users\\soylo\\Desktop\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj",
+      "projectPath": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj",
       "packagesPath": "C:\\Users\\soylo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\soylo\\Desktop\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\obj\\",
+      "outputPath": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

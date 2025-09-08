@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jeuAD/gXamk=",
+  "dgSpecHash": "xnh6xluyOl8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\soylo\\Desktop\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj",
+  "projectFilePath": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\soylo\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\soylo\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",
