@@ -31,13 +31,13 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Data.Helper
             DataTable dt = new DataTable();
             try
             {
-                // Abrimos la conexión
+             
                 _connection.Open();
                 var cmd = new SqlCommand(sp, _connection);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = sp;
 
-                // Agregamos parámetros si los hay
+             
                 if (param != null)
                 {
                     foreach (SpParameter p in param)
@@ -50,31 +50,28 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Data.Helper
             }
             catch (SqlException ex)
             {
-                // En caso de error, "catchamos" el error y retornamos null
+          
                 throw ex;
                 dt = null;
             }
             finally
             {
-                // Cerramos la conexión
                 _connection.Close();
             }
 
             return dt;
         }
 
-        // Método para ejecutar SPs con operaciones DML
+                         
         public bool ExecuteSpDml(string sp, List<SpParameter>? param = null)
         {
             bool result;
             try
             {
-                // Abrimos la conexión
                 _connection.Open();
                 var cmd = new SqlCommand(sp, _connection);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                // Agregamos parámetros si los hay
                 if (param != null)
                 {
                     foreach (SpParameter p in param)
@@ -89,16 +86,46 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Data.Helper
             }
             catch (SqlException ex)
             {
-                // En caso de error, retornamos false
+              
                 result = false;
             }
             finally
             {
-                // Cerramos la conexión
+               
                 _connection.Close();
             }
 
             return result;
+        }
+
+        public int ExecuteSPDml(string sp, List<SqlParameter> parametros = null)
+        {
+            int filasAfectadas = 0;
+            try
+            {
+                using (SqlConnection conn = new SqlConnection (Properties.Resources.CadenaConexionLocal))
+                {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand(sp, conn))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+
+                        if (parametros != null)
+                        {
+                            foreach (SqlParameter p in parametros)
+                                cmd.Parameters.Add(p);
+                        }
+
+                        filasAfectadas = cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                filasAfectadas = -1;
+                // Log opcional
+            }
+            return filasAfectadas;
         }
     }
 }

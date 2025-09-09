@@ -22,12 +22,12 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Data.Implementations
         };
 
                 DataHelper.GetInstance().ExecuteSpDml("SP_BAJA_ARTICULO", param);
-                return true; // si llega hasta acá, se borró o no existía pero no hubo error
+                return true; 
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error en Delete: {ex.Message}");
-                return false; // solo devuelve false si realmente falló
+                return false; 
             }
         }
 
@@ -82,10 +82,10 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Data.Implementations
         {
             List<Product> lst = new List<Product>();
 
-            // Traer registros de la BD
+           
             var dt = DataHelper.GetInstance().ExecuteSPQuery("SP_RECUPERAR_PRODUCTOS");
 
-            // Mapear cada DataRow a un Product
+     
             foreach (DataRow row in dt.Rows)
             {
                 Product p = new Product();
@@ -94,12 +94,12 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Data.Implementations
               
 
 
-                // Manejamos el valor nulo para el precio
+               
                 if (row["precio"] != DBNull.Value)
                 {
                     p.UnitPrice = (decimal)row["precio"];
                 }
-                // Si es nulo, agregamos un 0
+              
                 else
                 {
                     p.UnitPrice = 0m;
