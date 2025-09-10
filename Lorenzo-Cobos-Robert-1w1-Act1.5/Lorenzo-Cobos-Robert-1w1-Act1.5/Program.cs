@@ -36,7 +36,6 @@ class Program
     {
         ProductService oService = new ProductService();
 
-        // Obtener todos los productos
         Console.WriteLine("\n--- GetAll() ---");
         try
         {
@@ -52,7 +51,7 @@ class Program
             Console.WriteLine($"Error getting products: {ex.Message}");
         }
 
-        // Obtener producto por Id
+   
         Console.WriteLine("\n--- GetById(5) ---");
         try
         {
@@ -64,7 +63,7 @@ class Program
             Console.WriteLine($"Error getting product: {ex.Message}");
         }
 
-        // Crear producto
+ 
         Console.WriteLine("\n--- Save (Create) ---");
         Product newProduct = new Product { Name = "Test Product", UnitPrice = 123.45m };
 
@@ -78,13 +77,13 @@ class Program
             Console.WriteLine($"Error creating product: {ex.Message}");
         }
 
-        // Mostrar productos nuevamente
+     
         Console.WriteLine("\n--- GetAll() ---");
         List<Product> updatedProducts = oService.GetProducts();
         foreach (var p in updatedProducts)
             Console.WriteLine(p);
 
-        // Eliminar el último producto creado
+      
         Product? lastProduct = updatedProducts.LastOrDefault(p => p.Name == "Test Product");
         if (lastProduct != null)
         {
@@ -100,7 +99,7 @@ class Program
             }
         }
 
-        // Actualizar producto existente
+      
         Console.WriteLine("\n--- Save (Update) ---");
         Product updateProduct = new Product
         {
@@ -121,39 +120,93 @@ class Program
     }
 
     // ==================== FACTURAS ====================
-    static void TestInvoices()
+  static void TestInvoices()
+{
+    InvoiceRepository repo = new InvoiceRepository();
+    InvoiceService oService = new InvoiceService();
+
+    // ------------------- GET ALL -------------------
+    Console.WriteLine("\n--- GetAll() ---");
+    List<Invoice> invoices = repo.GetAll();
+    foreach (var inv in invoices)
     {
-        InvoiceRepository repo = new InvoiceRepository();
-
-        // Traer todas
-        Console.WriteLine("\n--- GetAll() ---");
-        List<Invoice> invoices = repo.GetAll();
-        foreach (var inv in invoices)
-            Console.WriteLine($"Factura #{inv.InvoiceNo} - Cliente: {inv.Client} - Fecha: {inv.Date.ToShortDateString()} - FormaPago: {inv.PayType?.Name}");
-
-        // Buscar por Id
-        Console.WriteLine("\n--- GetById(1) ---");
-        var invoice = repo.GetById(1);
-        Console.WriteLine(invoice != null
-            ? $"Factura encontrada: #{invoice.InvoiceNo} - Cliente: {invoice.Client}"
-            : "No se encontró la factura con ID 1");
-
-        // Guardar nueva
-        Console.WriteLine("\n--- Save() ---");
-        Invoice nuevaFactura = new Invoice
-        {
-            InvoiceNo = 1001,
-            Date = DateTime.Now,
-            Client = "Juan Pérez",
-            PayType = new PaymentMethod { Id = 1, Name = "Efectivo" }
-        };
-
-        bool saved = repo.Save(nuevaFactura);
-        Console.WriteLine(saved ? "Factura guardada con éxito." : "Error al guardar la factura.");
-
-        // Eliminar
-        Console.WriteLine("\n--- Delete(1001) ---");
-        bool deleted = repo.Delete(1001);
-        Console.WriteLine(deleted ? "Factura eliminada con éxito." : "No se pudo eliminar la factura.");
+        Console.WriteLine($"Invoice #{inv.InvoiceNo} - Client: {inv.Client} - " +
+                          $"Date: {inv.Date.ToShortDateString()} - Payment: {inv.PayType?.Name}");
     }
+
+    // ------------------- GET BY ID -------------------
+    Console.WriteLine("\n--- GetById(1) ---");
+    var invoice = repo.GetById(1);
+    if (invoice != null)
+    {
+        Console.WriteLine($"Invoice found: #{invoice.InvoiceNo} - Client: {invoice.Client}");
+    }
+    else
+    {
+        Console.WriteLine("Invoice with ID 1 not found.");
+    }
+
+    // ------------------- SAVE (Create) -------------------
+    Console.WriteLine("\n--- Save (Create) ---");
+    Invoice newInvoice = new Invoice
+    {
+        InvoiceNo = 0,
+        Date = DateTime.Now,
+        Client = "Juan Pérezz",
+        PayType = new PaymentMethod { Id = 1 } // Efectivo
+    };
+
+    try
+    {
+        bool saved = oService.SaveInvoice(newInvoice);
+        Console.WriteLine(saved ? "Invoice created successfully!" : "Failed to save invoice.");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error creating invoice: {ex.Message}");
+    }
+
+    // ------------------- EXECUTE TRANSACTION -------------------
+    Console.WriteLine("\n--- ExecuteTransaction (Invoice with Details) ---");
+
+    Invoice invoiceWithDetails = new Invoice
+    {
+        Client = "Ana Gómez",
+        Date = DateTime.Now,
+        PayType = new PaymentMethod { Id = 2 } // Tarjeta Débito
+    };
+
+    // Agregar detalles
+    invoiceWithDetails.AddDetail(new InvoiceDetail
+    {
+        Product = new Product { IdProduct = 3, Name = "Monitor Samsung 24\"", UnitPrice = 80000 },
+        Quantity = 1
+    });
+
+    invoiceWithDetails.AddDetail(new InvoiceDetail
+    {
+        Product = new Product { IdProduct = 4, Name = "Auriculares HyperX", UnitPrice = 25000 },
+        Quantity = 2
+    });
+
+    bool resultTransaction = oService.ExecuteTransaction(invoiceWithDetails);
+    Console.WriteLine(resultTransaction
+        ? "Invoice with details created successfully!"
+        : "Error: Could not create invoice with details.");
+
+    // ------------------- GET ALL After Transaction -------------------
+    Console.WriteLine("\n--- GetAll() After Transaction ---");
+    invoices = repo.GetAll();
+    foreach (var inv in invoices)
+    {
+        Console.WriteLine($"Invoice #{inv.InvoiceNo} - Client: {inv.Client} - " +
+                          $"Date: {inv.Date.ToShortDateString()} - Payment: {inv.PayType?.Name}");
+    }
+
+    // ------------------- DELETE -------------------
+    Console.WriteLine("\n--- Delete(5) ---");
+    bool deleted = repo.Delete(5);
+    Console.WriteLine(deleted ? "Invoice deleted successfully!" : "Failed to delete invoice.");
+}
+
 }

@@ -19,7 +19,7 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Services
 
         public List<Product> GetProducts()
         {
-            // En algunos casos, no hay lógica de negocio adicional
+         
             return _repository.GetAll();
         }
 

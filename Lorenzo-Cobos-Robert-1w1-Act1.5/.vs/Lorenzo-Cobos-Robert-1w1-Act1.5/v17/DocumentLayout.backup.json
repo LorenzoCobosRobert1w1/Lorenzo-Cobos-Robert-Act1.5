@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|c:\\users\\soylo\\desktop\\act-1.5\\lorenzo-cobos-robert-1w1-act1.5\\lorenzo-cobos-robert-1w1-act1.5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|solutionrelative:lorenzo-cobos-robert-1w1-act1.5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|c:\\users\\soylo\\desktop\\act-1.5\\lorenzo-cobos-robert-1w1-act1.5\\lorenzo-cobos-robert-1w1-act1.5\\data\\implementations\\invoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|solutionrelative:lorenzo-cobos-robert-1w1-act1.5\\data\\implementations\\invoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,12 +11,8 @@
       "RelativeMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|solutionrelative:lorenzo-cobos-robert-1w1-act1.5\\data\\implementations\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|c:\\users\\soylo\\desktop\\act-1.5\\lorenzo-cobos-robert-1w1-act1.5\\lorenzo-cobos-robert-1w1-act1.5\\database\\sqlquery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|solutionrelative:lorenzo-cobos-robert-1w1-act1.5\\database\\sqlquery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|c:\\users\\soylo\\desktop\\act-1.5\\lorenzo-cobos-robert-1w1-act1.5\\lorenzo-cobos-robert-1w1-act1.5\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|solutionrelative:lorenzo-cobos-robert-1w1-act1.5\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|c:\\users\\soylo\\desktop\\act-1.5\\lorenzo-cobos-robert-1w1-act1.5\\lorenzo-cobos-robert-1w1-act1.5\\data\\interfaces\\iinvoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|solutionrelative:lorenzo-cobos-robert-1w1-act1.5\\data\\interfaces\\iinvoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|c:\\users\\soylo\\desktop\\act-1.5\\lorenzo-cobos-robert-1w1-act1.5\\lorenzo-cobos-robert-1w1-act1.5\\data\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,24 +27,32 @@
       "RelativeMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|solutionrelative:lorenzo-cobos-robert-1w1-act1.5\\domain\\invoicedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|c:\\users\\soylo\\desktop\\act-1.5\\lorenzo-cobos-robert-1w1-act1.5\\lorenzo-cobos-robert-1w1-act1.5\\domain\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|solutionrelative:lorenzo-cobos-robert-1w1-act1.5\\domain\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|c:\\users\\soylo\\desktop\\act-1.5\\lorenzo-cobos-robert-1w1-act1.5\\lorenzo-cobos-robert-1w1-act1.5\\domain\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|solutionrelative:lorenzo-cobos-robert-1w1-act1.5\\domain\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|c:\\users\\soylo\\desktop\\act-1.5\\lorenzo-cobos-robert-1w1-act1.5\\lorenzo-cobos-robert-1w1-act1.5\\data\\interfaces\\iinvoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|solutionrelative:lorenzo-cobos-robert-1w1-act1.5\\data\\interfaces\\iinvoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|c:\\users\\soylo\\desktop\\act-1.5\\lorenzo-cobos-robert-1w1-act1.5\\lorenzo-cobos-robert-1w1-act1.5\\domain\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|solutionrelative:lorenzo-cobos-robert-1w1-act1.5\\domain\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|c:\\users\\soylo\\desktop\\act-1.5\\lorenzo-cobos-robert-1w1-act1.5\\lorenzo-cobos-robert-1w1-act1.5\\services\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|solutionrelative:lorenzo-cobos-robert-1w1-act1.5\\services\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|c:\\users\\soylo\\desktop\\act-1.5\\lorenzo-cobos-robert-1w1-act1.5\\lorenzo-cobos-robert-1w1-act1.5\\domain\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|solutionrelative:lorenzo-cobos-robert-1w1-act1.5\\domain\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|c:\\users\\soylo\\desktop\\act-1.5\\lorenzo-cobos-robert-1w1-act1.5\\lorenzo-cobos-robert-1w1-act1.5\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|solutionrelative:lorenzo-cobos-robert-1w1-act1.5\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|c:\\users\\soylo\\desktop\\act-1.5\\lorenzo-cobos-robert-1w1-act1.5\\lorenzo-cobos-robert-1w1-act1.5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|solutionrelative:lorenzo-cobos-robert-1w1-act1.5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|c:\\users\\soylo\\desktop\\act-1.5\\lorenzo-cobos-robert-1w1-act1.5\\lorenzo-cobos-robert-1w1-act1.5\\data\\helper\\datahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|solutionrelative:lorenzo-cobos-robert-1w1-act1.5\\data\\helper\\datahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|c:\\users\\soylo\\desktop\\act-1.5\\lorenzo-cobos-robert-1w1-act1.5\\lorenzo-cobos-robert-1w1-act1.5\\database\\sqlquery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|solutionrelative:lorenzo-cobos-robert-1w1-act1.5\\database\\sqlquery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F20E5F3-0D3D-46F9-A146-5B6B4799D9CB}|Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj|c:\\users\\soylo\\desktop\\act-1.5\\lorenzo-cobos-robert-1w1-act1.5\\lorenzo-cobos-robert-1w1-act1.5\\data\\helper\\spparameter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -81,8 +81,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Services\\ProductService.cs",
+              "RelativeToolTip": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Services\\ProductService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwBUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T12:43:03.894Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -102,31 +116,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "IProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Interfaces\\IProductRepository.cs",
-              "RelativeDocumentMoniker": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Interfaces\\IProductRepository.cs",
-              "ToolTip": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Interfaces\\IProductRepository.cs",
-              "RelativeToolTip": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Interfaces\\IProductRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAANAAAAAAAAAA==",
+              "Title": "InvoiceDetail.cs",
+              "DocumentMoniker": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Domain\\InvoiceDetail.cs",
+              "RelativeDocumentMoniker": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Domain\\InvoiceDetail.cs",
+              "ToolTip": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Domain\\InvoiceDetail.cs",
+              "RelativeToolTip": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Domain\\InvoiceDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:44:51.758Z",
+              "WhenOpened": "2025-09-08T12:44:35.481Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SQLQuery1.sql ",
-              "DocumentMoniker": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\DataBase\\SQLQuery1.sql",
-              "RelativeDocumentMoniker": "Lorenzo-Cobos-Robert-1w1-Act1.5\\DataBase\\SQLQuery1.sql",
-              "ToolTip": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\DataBase\\SQLQuery1.sql",
-              "RelativeToolTip": "Lorenzo-Cobos-Robert-1w1-Act1.5\\DataBase\\SQLQuery1.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-09-08T12:43:09.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Invoice.cs",
               "DocumentMoniker": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Domain\\Invoice.cs",
               "RelativeDocumentMoniker": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Domain\\Invoice.cs",
@@ -139,111 +141,59 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Interfaces\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Interfaces\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Interfaces\\IProductRepository.cs",
+              "RelativeToolTip": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Interfaces\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T12:44:51.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Implementations\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Implementations\\ProductRepository.cs",
-              "ToolTip": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Implementations\\ProductRepository.cs",
-              "RelativeToolTip": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Implementations\\ProductRepository.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAowAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T13:04:53.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Services\\ProductService.cs",
-              "ToolTip": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Services\\ProductService.cs",
-              "RelativeToolTip": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Services\\ProductService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:43:03.894Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InvoiceRepository.cs",
-              "DocumentMoniker": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Implementations\\InvoiceRepository.cs",
-              "RelativeDocumentMoniker": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Implementations\\InvoiceRepository.cs",
-              "ToolTip": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Implementations\\InvoiceRepository.cs",
-              "RelativeToolTip": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Implementations\\InvoiceRepository.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAADwv1oAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T13:04:40.562Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Program.cs",
-              "RelativeDocumentMoniker": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Program.cs",
-              "ToolTip": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Program.cs",
-              "RelativeToolTip": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Program.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAowAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T13:17:41.732Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "InvoiceDetail.cs",
-              "DocumentMoniker": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Domain\\InvoiceDetail.cs",
-              "RelativeDocumentMoniker": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Domain\\InvoiceDetail.cs",
-              "ToolTip": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Domain\\InvoiceDetail.cs",
-              "RelativeToolTip": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Domain\\InvoiceDetail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:44:35.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Domain\\Product.cs",
-              "RelativeDocumentMoniker": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Domain\\Product.cs",
-              "ToolTip": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Domain\\Product.cs",
-              "RelativeToolTip": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Domain\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:42:56.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "IInvoiceRepository.cs",
               "DocumentMoniker": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Interfaces\\IInvoiceRepository.cs",
               "RelativeDocumentMoniker": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Interfaces\\IInvoiceRepository.cs",
               "ToolTip": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Interfaces\\IInvoiceRepository.cs",
               "RelativeToolTip": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Interfaces\\IInvoiceRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-08T12:44:50.841Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "InvoiceService.cs",
-              "DocumentMoniker": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Services\\InvoiceService.cs",
-              "RelativeDocumentMoniker": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Services\\InvoiceService.cs",
-              "ToolTip": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Services\\InvoiceService.cs",
-              "RelativeToolTip": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Services\\InvoiceService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "InvoiceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Implementations\\InvoiceRepository.cs",
+              "RelativeDocumentMoniker": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Implementations\\InvoiceRepository.cs",
+              "ToolTip": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Implementations\\InvoiceRepository.cs*",
+              "RelativeToolTip": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Implementations\\InvoiceRepository.cs*",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAMwFIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T02:45:44.829Z",
+              "WhenOpened": "2025-09-08T13:04:40.562Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Implementations\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Implementations\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Implementations\\ProductRepository.cs",
+              "RelativeToolTip": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Implementations\\ProductRepository.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAwwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T13:04:53.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "PaymentMethod.cs",
               "DocumentMoniker": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Domain\\PaymentMethod.cs",
               "RelativeDocumentMoniker": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Domain\\PaymentMethod.cs",
@@ -256,15 +206,66 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Domain\\Product.cs",
+              "RelativeDocumentMoniker": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Domain\\Product.cs",
+              "ToolTip": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Domain\\Product.cs",
+              "RelativeToolTip": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Domain\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T12:42:56.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InvoiceService.cs",
+              "DocumentMoniker": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Services\\InvoiceService.cs",
+              "RelativeDocumentMoniker": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Services\\InvoiceService.cs",
+              "ToolTip": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Services\\InvoiceService.cs",
+              "RelativeToolTip": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Services\\InvoiceService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwC0AAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T02:45:44.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Program.cs",
+              "RelativeDocumentMoniker": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Program.cs",
+              "ToolTip": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Program.cs",
+              "RelativeToolTip": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAL8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T13:17:41.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "DataHelper.cs",
               "DocumentMoniker": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Helper\\DataHelper.cs",
               "RelativeDocumentMoniker": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Helper\\DataHelper.cs",
               "ToolTip": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Helper\\DataHelper.cs",
               "RelativeToolTip": "Lorenzo-Cobos-Robert-1w1-Act1.5\\Data\\Helper\\DataHelper.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAcwF0AAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAAAMQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-08T12:41:48.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\DataBase\\SQLQuery1.sql",
+              "RelativeDocumentMoniker": "Lorenzo-Cobos-Robert-1w1-Act1.5\\DataBase\\SQLQuery1.sql",
+              "ToolTip": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\DataBase\\SQLQuery1.sql",
+              "RelativeToolTip": "Lorenzo-Cobos-Robert-1w1-Act1.5\\DataBase\\SQLQuery1.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-09-08T12:43:09.589Z",
               "EditorCaption": ""
             },
             {

@@ -7,6 +7,9 @@ using _1W1LORENZOCOBOSROBERTNADAMAS.Data.Implementations;
 using _1W1LORENZOCOBOSROBERTNADAMAS.Data.Interfaces;
 using _1W1LORENZOCOBOSROBERTNADAMAS.Domain;
 
+
+using _1W1LORENZOCOBOSROBERTNADAMAS.Data.Helper;
+
 namespace _1W1LORENZOCOBOSROBERTNADAMAS.Services
 {
     internal class InvoiceService
@@ -31,6 +34,16 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Services
         public bool DeleteInvoice(int id)
         {
             return _repository.Delete(id);
+        }
+
+         public bool ExecuteTransaction(Product product)
+        {
+            return DataHelper.GetInstance().ExecuteTransaction(product);
+        }
+
+        internal bool ExecuteTransaction(Invoice invoiceWithDetails)
+        {
+            return DataHelper.GetInstance().ExecuteTransaction(invoiceWithDetails);
         }
     }
 }

@@ -1,5 +1,6 @@
-
-USE FacturacionDB01;
+Create database FacturacionBD4215271w1
+GO
+USE FacturacionBD4215271w1;
 GO
 
 -- Tablas
@@ -64,6 +65,8 @@ INSERT INTO DetalleFactura (Id_Factura, Id_Articulo, Cantidad) VALUES
 (4, 5, 1);
 GO
 
+USE FacturacionBD4215271w1;
+GO
 -- SP: Facturas
 CREATE OR ALTER PROCEDURE sp_Factura_GetAll
 AS
@@ -89,6 +92,7 @@ BEGIN
     WHERE f.Id_Factura = @Id_Factura;
 END;
 GO
+
 
 CREATE OR ALTER PROCEDURE sp_Factura_Save
     @Id_Factura INT = NULL,
@@ -118,8 +122,10 @@ BEGIN
 END;
 GO
 
+USE FacturacionBD4215271w1;
+GO
 -- SP: Productos
-CREATE OR ALTER PROCEDURE SP_RECUPERAR_PRODUCTOS
+CREATE  PROCEDURE SP_RECUPERAR_PRODUCTOS
 AS
 BEGIN
     SELECT 
@@ -132,8 +138,9 @@ BEGIN
     ORDER BY Nombre;
 END;
 GO
-
-CREATE OR ALTER PROCEDURE SP_RECUPERAR_PRODUCTO_POR_CODIGO
+USE FacturacionBD4215271w1;
+GO
+CREATE  PROCEDURE SP_RECUPERAR_PRODUCTO_POR_CODIGO
     @codigo INT
 AS
 BEGIN
@@ -148,7 +155,7 @@ BEGIN
 END;
 GO
 
-CREATE OR ALTER PROCEDURE SP_GUARDAR_ARTICULO
+CREATE  PROCEDURE SP_GUARDAR_ARTICULO
     @codigo INT,
     @nombre VARCHAR(100),
     @precio DECIMAL(10,2)
@@ -165,7 +172,7 @@ BEGIN
 END;
 GO
 
-CREATE OR ALTER PROCEDURE SP_BAJA_ARTICULO
+CREATE  PROCEDURE SP_BAJA_ARTICULO
     @codigo INT
 AS
 BEGIN
@@ -174,10 +181,16 @@ BEGIN
 END;
 GO
 
--- Borrar todos los productos de prueba
---DELETE FROM Articulo WHERE Nombre = 'Test Product';
---GO
-
+CREATE  PROCEDURE SP_GUARDAR_DETALLE_FACTURA
+    @Id_Factura INT,
+    @Id_Articulo INT,
+    @Cantidad INT
+AS
+BEGIN
+    INSERT INTO DetalleFactura (Id_Factura, Id_Articulo, Cantidad)
+    VALUES (@Id_Factura, @Id_Articulo, @Cantidad);
+END;
+GO
 
 
 

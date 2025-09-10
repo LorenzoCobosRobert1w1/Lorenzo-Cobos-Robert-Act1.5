@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using _1W1LORENZOCOBOSROBERTNADAMAS.Domain;
 using Microsoft.Data.SqlClient;
 
 namespace _1W1LORENZOCOBOSROBERTNADAMAS.Data.Helper
@@ -127,5 +128,69 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Data.Helper
             }
             return filasAfectadas;
         }
+
+        public bool ExecuteTransaction(Invoice invoice)
+        {
+            // Usamos 'using' para asegurar que la conexión se cierre y la transacción se maneje correctamente, incluso si ocurre una excepción.
+            using (SqlConnection connection = new SqlConnection(Properties.Resources.CadenaConexionLocal))
+            {
+                connection.Open();
+                SqlTransaction transaction = connection.BeginTransaction();
+
+                try
+                {
+                    // Guarda la cabecera de la factura
+                    var cmdFactura = new SqlCommand("sp_Factura_Save", connection, transaction);
+                    cmdFactura.CommandType = CommandType.StoredProcedure;
+                    cmdFactura.Parameters.AddWithValue("@Fecha", invoice.Date);
+                    cmdFactura.Parameters.AddWithValue("@Cliente", invoice.Client);
+                    cmdFactura.Parameters.AddWithValue("@Id_FormaPago", invoice.PayType.Id);
+
+                    // Si la factura ya existe, se actualiza
+                    if (invoice.InvoiceNo > 0)
+                    {
+                        cmdFactura.Parameters.AddWithValue("@Id_Factura", invoice.InvoiceNo);
+                    }
+                    else
+                    {
+                        cmdFactura.Parameters.AddWithValue("@Id_Factura", DBNull.Value);
+                    }
+
+                    // Obtiene el ID de la factura recién creada
+                    int idFactura = Convert.ToInt32(cmdFactura.ExecuteScalar());
+
+                    // Guarda los detalles de la factura
+                    foreach (var detalle in invoice.Detail)
+                    {
+                        var cmdDetalle = new SqlCommand("SP_GUARDAR_DETALLE_FACTURA", connection, transaction);
+                        cmdDetalle.CommandType = CommandType.StoredProcedure;
+                        cmdDetalle.Parameters.AddWithValue("@Id_Factura", idFactura);
+                        cmdDetalle.Parameters.AddWithValue("@Id_Articulo", detalle.Product.IdProduct);
+                        cmdDetalle.Parameters.AddWithValue("@Cantidad", detalle.Quantity);
+                        cmdDetalle.ExecuteNonQuery();
+                    }
+
+                    // Si todo va bien, se confirma la transacción
+                    transaction.Commit();
+                    return true;
+                }
+                catch
+                {
+                    // Si algo falla, se revierte la transacción
+                    transaction.Rollback();
+                    return false;
+                }
+            } // La conexión se cierra automáticamente gracias a 'using'
+        }
+
+        internal bool ExecuteTransaction(Product product)
+        {
+            throw new NotImplementedException();
+        }
     }
+
+
 }
+
+
+
