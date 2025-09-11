@@ -120,76 +120,83 @@ class Program
     }
 
     // ==================== FACTURAS ====================
-  static void TestInvoices()
-{
-    InvoiceRepository repo = new InvoiceRepository();
-    InvoiceService oService = new InvoiceService();
-
-    // ------------------- GET ALL -------------------
-    Console.WriteLine("\n--- GetAll() ---");
-    List<Invoice> invoices = repo.GetAll();
-    foreach (var inv in invoices)
+    static void TestInvoices()
     {
-        Console.WriteLine($"Invoice #{inv.InvoiceNo} - Client: {inv.Client} - " +
-                          $"Date: {inv.Date.ToShortDateString()} - Payment: {inv.PayType?.Name}");
+        InvoiceRepository repo = new InvoiceRepository();
+        InvoiceService oService = new InvoiceService();
+
+        // ------------------- GET ALL -------------------
+        Console.WriteLine("\n--- GetAll() ---");
+        List<Invoice> invoices = repo.GetAll();
+        foreach (var inv in invoices)
+        {
+            Console.WriteLine($"Invoice #{inv.InvoiceNo} - Client: {inv.Client} - " +
+                              $"Date: {inv.Date.ToShortDateString()} - Payment: {inv.PayType?.Name}");
+        }
+
+        // ------------------- GET BY ID -------------------
+        Console.WriteLine("\n--- GetById(1) ---");
+        var invoice = repo.GetById(1);
+        if (invoice != null)
+        {
+            Console.WriteLine($"Invoice found: #{invoice.InvoiceNo} - Client: {invoice.Client}");
+        }
+        else
+        {
+            Console.WriteLine("Invoice with ID 1 not found.");
+        }
+
+        // ------------------- SAVE (Create) -------------------
+        Console.WriteLine("\n--- Save (Create) ---");
+        Invoice newInvoice = new Invoice
+        {
+            InvoiceNo = 0,
+            Date = DateTime.Now,
+            Client = "Juan Pérezz",
+            PayType = new PaymentMethod { Id = 1 } // Efectivo
+        };
+
+        try
+        {
+            bool saved = oService.SaveInvoice(newInvoice);
+            Console.WriteLine(saved ? "Invoice created successfully!" : "Failed to save invoice.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error creating invoice: {ex.Message}");
+        }
+
+        // ------------------- EXECUTE TRANSACTION -------------------
+        Console.WriteLine("\n--- ExecuteTransaction (Invoice with Details) ---");
+
+   
+
+
+        Invoice invoiceWithDetails = new Invoice
+        {
+            Client = "Ana Gómez",
+            Date = DateTime.Now,
+            PayType = new PaymentMethod { Id = 2 }, // Tarjeta Débito
+            Detail = new List<InvoiceDetail>()
+    {
+        new InvoiceDetail
+        {
+            Product = new Product { IdProduct = 1 }, // Mouse Logitech
+            Quantity = 2
+        },
+        new InvoiceDetail
+        {
+            Product = new Product { IdProduct = 2 }, // Teclado Redragon
+            Quantity = 1
+        }
     }
+        };
 
-    // ------------------- GET BY ID -------------------
-    Console.WriteLine("\n--- GetById(1) ---");
-    var invoice = repo.GetById(1);
-    if (invoice != null)
-    {
-        Console.WriteLine($"Invoice found: #{invoice.InvoiceNo} - Client: {invoice.Client}");
-    }
-    else
-    {
-        Console.WriteLine("Invoice with ID 1 not found.");
-    }
 
-    // ------------------- SAVE (Create) -------------------
-    Console.WriteLine("\n--- Save (Create) ---");
-    Invoice newInvoice = new Invoice
-    {
-        InvoiceNo = 0,
-        Date = DateTime.Now,
-        Client = "Juan Pérezz",
-        PayType = new PaymentMethod { Id = 1 } // Efectivo
-    };
 
-    try
-    {
-        bool saved = oService.SaveInvoice(newInvoice);
-        Console.WriteLine(saved ? "Invoice created successfully!" : "Failed to save invoice.");
-    }
-    catch (Exception ex)
-    {
-        Console.WriteLine($"Error creating invoice: {ex.Message}");
-    }
 
-    // ------------------- EXECUTE TRANSACTION -------------------
-    Console.WriteLine("\n--- ExecuteTransaction (Invoice with Details) ---");
 
-    Invoice invoiceWithDetails = new Invoice
-    {
-        Client = "Ana Gómez",
-        Date = DateTime.Now,
-        PayType = new PaymentMethod { Id = 2 } // Tarjeta Débito
-    };
-
-    // Agregar detalles
-    invoiceWithDetails.AddDetail(new InvoiceDetail
-    {
-        Product = new Product { IdProduct = 3, Name = "Monitor Samsung 24\"", UnitPrice = 80000 },
-        Quantity = 1
-    });
-
-    invoiceWithDetails.AddDetail(new InvoiceDetail
-    {
-        Product = new Product { IdProduct = 4, Name = "Auriculares HyperX", UnitPrice = 25000 },
-        Quantity = 2
-    });
-
-    bool resultTransaction = oService.ExecuteTransaction(invoiceWithDetails);
+        bool resultTransaction = oService.ExecuteTransaction(invoiceWithDetails);
     Console.WriteLine(resultTransaction
         ? "Invoice with details created successfully!"
         : "Error: Could not create invoice with details.");

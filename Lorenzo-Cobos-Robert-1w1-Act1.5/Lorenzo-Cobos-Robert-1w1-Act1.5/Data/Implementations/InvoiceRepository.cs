@@ -78,16 +78,8 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Data.Implementations
 
         public bool Save(Invoice factura)
         {
-            List<SpParameter> param = new List<SpParameter>
-                           {
-                  new SpParameter("@Id_Factura",
-                   factura.InvoiceNo == 0 ? DBNull.Value : factura.InvoiceNo),
-                  new SpParameter("@Fecha", factura.Date),
-                  new SpParameter("@Cliente", factura.Client),
-                  new SpParameter("@Id_FormaPago", factura.PayType.Id)
-                           };
-
-            return DataHelper.GetInstance().ExecuteSpDml("sp_Factura_Save", param);
+            return DataHelper.GetInstance().ExecuteTransaction(factura);
         }
+
     }
 }

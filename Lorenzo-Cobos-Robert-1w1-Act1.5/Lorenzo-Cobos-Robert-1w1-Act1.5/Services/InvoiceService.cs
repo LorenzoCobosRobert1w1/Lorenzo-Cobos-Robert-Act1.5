@@ -31,6 +31,7 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Services
             return _repository.Save(invoice);
         }
 
+
         public bool DeleteInvoice(int id)
         {
             return _repository.Delete(id);
@@ -40,6 +41,7 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Services
         {
             return DataHelper.GetInstance().ExecuteTransaction(product);
         }
+
 
         internal bool ExecuteTransaction(Invoice invoiceWithDetails)
         {

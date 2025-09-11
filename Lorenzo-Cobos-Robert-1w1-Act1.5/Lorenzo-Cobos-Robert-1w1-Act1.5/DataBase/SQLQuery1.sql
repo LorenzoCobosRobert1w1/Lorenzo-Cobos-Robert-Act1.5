@@ -1,6 +1,6 @@
-Create database FacturacionBD4215271w1
+Create database FacturacionDB
 GO
-USE FacturacionBD4215271w1;
+USE FacturacionDB
 GO
 
 -- Tablas
@@ -65,7 +65,7 @@ INSERT INTO DetalleFactura (Id_Factura, Id_Articulo, Cantidad) VALUES
 (4, 5, 1);
 GO
 
-USE FacturacionBD4215271w1;
+USE FacturacionDB
 GO
 -- SP: Facturas
 CREATE OR ALTER PROCEDURE sp_Factura_GetAll
@@ -93,7 +93,6 @@ BEGIN
 END;
 GO
 
-
 CREATE OR ALTER PROCEDURE sp_Factura_Save
     @Id_Factura INT = NULL,
     @Fecha DATE,
@@ -101,18 +100,30 @@ CREATE OR ALTER PROCEDURE sp_Factura_Save
     @Id_FormaPago INT
 AS
 BEGIN
+    SET NOCOUNT ON;
+
     IF @Id_Factura IS NULL
+    BEGIN
         INSERT INTO Factura (Fecha, Cliente, Id_FormaPago)
         VALUES (@Fecha, @Cliente, @Id_FormaPago);
+
+        SELECT SCOPE_IDENTITY() AS IdFactura; -- devuelve el nuevo ID
+    END
     ELSE
+    BEGIN
         UPDATE Factura
         SET Fecha = @Fecha,
             Cliente = @Cliente,
             Id_FormaPago = @Id_FormaPago
         WHERE Id_Factura = @Id_Factura;
-END;
-GO
 
+        SELECT @Id_Factura AS IdFactura; -- devuelve el ID actualizado
+    END
+END;
+
+
+
+GO
 CREATE OR ALTER PROCEDURE sp_Factura_Delete
     @Id_Factura INT
 AS
@@ -122,7 +133,7 @@ BEGIN
 END;
 GO
 
-USE FacturacionBD4215271w1;
+USE FacturacionDB
 GO
 -- SP: Productos
 CREATE  PROCEDURE SP_RECUPERAR_PRODUCTOS
@@ -138,7 +149,7 @@ BEGIN
     ORDER BY Nombre;
 END;
 GO
-USE FacturacionBD4215271w1;
+USE FacturacionDB;
 GO
 CREATE  PROCEDURE SP_RECUPERAR_PRODUCTO_POR_CODIGO
     @codigo INT

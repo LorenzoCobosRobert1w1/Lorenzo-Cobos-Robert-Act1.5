@@ -131,7 +131,6 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Data.Helper
 
         public bool ExecuteTransaction(Invoice invoice)
         {
-            // Usamos 'using' para asegurar que la conexión se cierre y la transacción se maneje correctamente, incluso si ocurre una excepción.
             using (SqlConnection connection = new SqlConnection(Properties.Resources.CadenaConexionLocal))
             {
                 connection.Open();
@@ -139,49 +138,52 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Data.Helper
 
                 try
                 {
-                    // Guarda la cabecera de la factura
+                    // 1. Guardar la cabecera de la factura
                     var cmdFactura = new SqlCommand("sp_Factura_Save", connection, transaction);
                     cmdFactura.CommandType = CommandType.StoredProcedure;
+
+                    // Parámetros de la factura
                     cmdFactura.Parameters.AddWithValue("@Fecha", invoice.Date);
                     cmdFactura.Parameters.AddWithValue("@Cliente", invoice.Client);
                     cmdFactura.Parameters.AddWithValue("@Id_FormaPago", invoice.PayType.Id);
 
-                    // Si la factura ya existe, se actualiza
+                    // Si es nueva factura, mandamos NULL
                     if (invoice.InvoiceNo > 0)
-                    {
                         cmdFactura.Parameters.AddWithValue("@Id_Factura", invoice.InvoiceNo);
-                    }
                     else
-                    {
                         cmdFactura.Parameters.AddWithValue("@Id_Factura", DBNull.Value);
-                    }
 
-                    // Obtiene el ID de la factura recién creada
+                    // IMPORTANTE: el SP ahora devuelve el Id generado o el mismo si se actualiza
                     int idFactura = Convert.ToInt32(cmdFactura.ExecuteScalar());
 
-                    // Guarda los detalles de la factura
+                    // 2. Guardar los detalles de la factura
                     foreach (var detalle in invoice.Detail)
                     {
                         var cmdDetalle = new SqlCommand("SP_GUARDAR_DETALLE_FACTURA", connection, transaction);
                         cmdDetalle.CommandType = CommandType.StoredProcedure;
+
                         cmdDetalle.Parameters.AddWithValue("@Id_Factura", idFactura);
-                        cmdDetalle.Parameters.AddWithValue("@Id_Articulo", detalle.Product.IdProduct);
+                        cmdDetalle.Parameters.AddWithValue("@Id_Articulo", detalle.Product.IdProduct); // solo Id necesario
                         cmdDetalle.Parameters.AddWithValue("@Cantidad", detalle.Quantity);
+
                         cmdDetalle.ExecuteNonQuery();
                     }
 
-                    // Si todo va bien, se confirma la transacción
+                    // 3. Confirmamos la transacción
                     transaction.Commit();
                     return true;
                 }
                 catch
                 {
-                    // Si algo falla, se revierte la transacción
+                    // Si algo falla, se deshace todo
                     transaction.Rollback();
                     return false;
                 }
-            } // La conexión se cierra automáticamente gracias a 'using'
+            }
         }
+
+        
+
 
         internal bool ExecuteTransaction(Product product)
         {

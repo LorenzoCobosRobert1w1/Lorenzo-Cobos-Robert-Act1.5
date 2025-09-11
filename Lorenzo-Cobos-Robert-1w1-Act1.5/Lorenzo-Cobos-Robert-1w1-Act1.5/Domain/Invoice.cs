@@ -12,7 +12,7 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Domain
         public DateTime Date { get; set; }
         public string Client { get; set; }
         public PaymentMethod PayType { get; set; }
-        public List<InvoiceDetail> Detail { get; } = new List<InvoiceDetail>();
+        public List<InvoiceDetail> Detail { get; set; } = new List<InvoiceDetail>();
 
         public void AddDetail(InvoiceDetail detalle)
         {
