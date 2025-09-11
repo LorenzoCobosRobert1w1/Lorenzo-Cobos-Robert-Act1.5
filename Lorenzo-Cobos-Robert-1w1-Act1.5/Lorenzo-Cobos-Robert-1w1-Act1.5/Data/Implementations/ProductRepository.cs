@@ -10,7 +10,7 @@ using _1W1LORENZOCOBOSROBERTNADAMAS.Domain;
 
 namespace _1W1LORENZOCOBOSROBERTNADAMAS.Data.Implementations
 {
-    internal class ProductRepository : IProductRepository
+  public class ProductRepository : IProductRepository
     {
         public bool Delete(int id)
         {

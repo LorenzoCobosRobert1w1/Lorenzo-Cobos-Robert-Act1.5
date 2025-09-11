@@ -124,7 +124,7 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Data.Helper
             catch (SqlException ex)
             {
                 filasAfectadas = -1;
-                // Log opcional
+               
             }
             return filasAfectadas;
         }
@@ -138,25 +138,23 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Data.Helper
 
                 try
                 {
-                    // 1. Guardar la cabecera de la factura
+                    
                     var cmdFactura = new SqlCommand("sp_Factura_Save", connection, transaction);
                     cmdFactura.CommandType = CommandType.StoredProcedure;
 
-                    // Parámetros de la factura
+                    
                     cmdFactura.Parameters.AddWithValue("@Fecha", invoice.Date);
                     cmdFactura.Parameters.AddWithValue("@Cliente", invoice.Client);
                     cmdFactura.Parameters.AddWithValue("@Id_FormaPago", invoice.PayType.Id);
 
-                    // Si es nueva factura, mandamos NULL
+                    
                     if (invoice.InvoiceNo > 0)
                         cmdFactura.Parameters.AddWithValue("@Id_Factura", invoice.InvoiceNo);
                     else
                         cmdFactura.Parameters.AddWithValue("@Id_Factura", DBNull.Value);
 
-                    // IMPORTANTE: el SP ahora devuelve el Id generado o el mismo si se actualiza
                     int idFactura = Convert.ToInt32(cmdFactura.ExecuteScalar());
 
-                    // 2. Guardar los detalles de la factura
                     foreach (var detalle in invoice.Detail)
                     {
                         var cmdDetalle = new SqlCommand("SP_GUARDAR_DETALLE_FACTURA", connection, transaction);
@@ -169,13 +167,13 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Data.Helper
                         cmdDetalle.ExecuteNonQuery();
                     }
 
-                    // 3. Confirmamos la transacción
+               
                     transaction.Commit();
                     return true;
                 }
                 catch
                 {
-                    // Si algo falla, se deshace todo
+                 
                     transaction.Rollback();
                     return false;
                 }

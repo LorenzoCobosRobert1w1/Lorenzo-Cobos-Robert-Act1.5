@@ -12,7 +12,7 @@ using _1W1LORENZOCOBOSROBERTNADAMAS.Data.Helper;
 
 namespace _1W1LORENZOCOBOSROBERTNADAMAS.Services
 {
-    internal class InvoiceService
+   public class InvoiceService
     {
 
         private IInvoiceRepository _repository;

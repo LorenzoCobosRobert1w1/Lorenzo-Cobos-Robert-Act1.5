@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xnh6xluyOl8=",
+  "dgSpecHash": "YgzymLqWxD4=",
   "success": true,
   "projectFilePath": "C:\\Users\\soylo\\Desktop\\Act-1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj",
   "expectedPackageFiles": [
@@ -36,10 +36,11 @@
     "C:\\Users\\soylo\\.nuget\\packages\\system.security.cryptography.pkcs\\8.0.1\\system.security.cryptography.pkcs.8.0.1.nupkg.sha512",
     "C:\\Users\\soylo\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512",
     "C:\\Users\\soylo\\.nuget\\packages\\system.text.json\\8.0.5\\system.text.json.8.0.5.nupkg.sha512",
-    "C:\\Users\\soylo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.17\\microsoft.windowsdesktop.app.ref.8.0.17.nupkg.sha512",
-    "C:\\Users\\soylo\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.17\\microsoft.netcore.app.ref.8.0.17.nupkg.sha512",
-    "C:\\Users\\soylo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.17\\microsoft.aspnetcore.app.ref.8.0.17.nupkg.sha512",
-    "C:\\Users\\soylo\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.17\\microsoft.netcore.app.host.win-x64.8.0.17.nupkg.sha512"
+    "C:\\Users\\soylo\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.305\\microsoft.net.sdk.compilers.toolset.9.0.305.nupkg.sha512",
+    "C:\\Users\\soylo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.20\\microsoft.windowsdesktop.app.ref.8.0.20.nupkg.sha512",
+    "C:\\Users\\soylo\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.20\\microsoft.netcore.app.ref.8.0.20.nupkg.sha512",
+    "C:\\Users\\soylo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.20\\microsoft.aspnetcore.app.ref.8.0.20.nupkg.sha512",
+    "C:\\Users\\soylo\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.20\\microsoft.netcore.app.host.win-x64.8.0.20.nupkg.sha512"
   ],
   "logs": []
 }

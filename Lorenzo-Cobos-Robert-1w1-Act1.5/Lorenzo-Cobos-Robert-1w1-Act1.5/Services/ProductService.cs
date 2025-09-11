@@ -9,12 +9,17 @@ using _1W1LORENZOCOBOSROBERTNADAMAS.Domain;
 
 namespace _1W1LORENZOCOBOSROBERTNADAMAS.Services
 {
-   public class ProductService
+   public class ProductService : IProductService
     {
         private IProductRepository _repository;
         public ProductService()
         {
             _repository = new ProductRepository();
+        }
+
+        public ProductService(IProductRepository repository)
+        {
+            _repository = repository;
         }
 
         public List<Product> GetProducts()
