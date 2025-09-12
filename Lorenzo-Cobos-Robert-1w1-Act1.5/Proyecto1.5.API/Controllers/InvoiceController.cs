@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using _1W1LORENZOCOBOSROBERTNADAMAS.Services;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,11 +9,25 @@ namespace Proyecto1._5.API.Controllers
     [ApiController]
     public class InvoiceController : ControllerBase
     {
+        private IInvoiceService _service;
+
+        public InvoiceController(IInvoiceService service)
+        {
+            _service = service;
+        }
         // GET: api/<InvoiceController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IActionResult Get()
         {
-            return new string[] { "value1", "value2" };
+            try
+            {
+                return Ok(_service.GetInvoice());
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, new { mensaje = "Error al acceder a datos" });
+            }
         }
 
         // GET api/<InvoiceController>/5

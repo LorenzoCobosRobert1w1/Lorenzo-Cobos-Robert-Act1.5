@@ -12,7 +12,7 @@ using _1W1LORENZOCOBOSROBERTNADAMAS.Data.Helper;
 
 namespace _1W1LORENZOCOBOSROBERTNADAMAS.Services
 {
-   public class InvoiceService
+   public class InvoiceService : IInvoiceService
     {
 
         private IInvoiceRepository _repository;
@@ -46,6 +46,13 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Services
         internal bool ExecuteTransaction(Invoice invoiceWithDetails)
         {
             return DataHelper.GetInstance().ExecuteTransaction(invoiceWithDetails);
+        }
+
+       
+
+        public Invoice? GetInvoiceById(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }
