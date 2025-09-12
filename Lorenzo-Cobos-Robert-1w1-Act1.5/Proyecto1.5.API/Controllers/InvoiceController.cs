@@ -1,4 +1,5 @@
-﻿using _1W1LORENZOCOBOSROBERTNADAMAS.Services;
+﻿using _1W1LORENZOCOBOSROBERTNADAMAS.Domain;
+using _1W1LORENZOCOBOSROBERTNADAMAS.Services;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -30,29 +31,63 @@ namespace Proyecto1._5.API.Controllers
             }
         }
 
-        // GET api/<InvoiceController>/5
+
         [HttpGet("{id}")]
-        public string Get(int id)
+        public IActionResult GeInvoicetById(int id)
         {
-            return "value";
+            try
+            {
+                var product = _service.GetInvoiceById(id);
+                if (product == null)
+                {
+                    return NotFound();
+                }
+                return Ok(product);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new { mensaje = ex.Message });
+            }
+
         }
 
-        // POST api/<InvoiceController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/<InvoiceController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public IActionResult SaveInvoice([FromBody] Invoice invoice)
         {
+            try
+            {
+                if (invoice == null)
+                    return BadRequest();
+
+                _service.SaveInvoice(invoice);
+                return Ok(invoice);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    new { mensaje = "Error al guardar la factura" });
+            }
         }
 
-        // DELETE api/<InvoiceController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult DeleteInvoice(int id)
         {
+            try
+            {
+                var existing = _service.GetInvoiceById(id);
+                if (existing == null)
+                    return NotFound();
+
+                _service.DeleteInvoice(id);
+                return NoContent();
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    new { mensaje = "Error al eliminar la factura" });
+            }
         }
+
+      
     }
 }

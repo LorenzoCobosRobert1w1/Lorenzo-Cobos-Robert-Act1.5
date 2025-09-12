@@ -52,7 +52,7 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Services
 
         public Invoice? GetInvoiceById(int id)
         {
-            throw new NotImplementedException();
+           return  _repository.GetById(id); 
         }
     }
 }

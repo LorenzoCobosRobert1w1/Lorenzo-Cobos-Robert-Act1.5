@@ -1598,23 +1598,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LOLO\\.nuget\\packages\\": {},
+    "C:\\Users\\soylo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LOLO\\Desktop\\Nueva carpeta\\PROGRAMACION2\\GITHUB\\Lorenzo-Cobos-Robert-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj",
+      "projectUniqueName": "C:\\Users\\soylo\\Desktop\\Act1.5 Continuacion\\Lorenzo-Cobos-Robert-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj",
       "projectName": "Proyecto1.5",
-      "projectPath": "C:\\Users\\LOLO\\Desktop\\Nueva carpeta\\PROGRAMACION2\\GITHUB\\Lorenzo-Cobos-Robert-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj",
-      "packagesPath": "C:\\Users\\LOLO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LOLO\\Desktop\\Nueva carpeta\\PROGRAMACION2\\GITHUB\\Lorenzo-Cobos-Robert-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\obj\\",
+      "projectPath": "C:\\Users\\soylo\\Desktop\\Act1.5 Continuacion\\Lorenzo-Cobos-Robert-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Proyecto1.5.csproj",
+      "packagesPath": "C:\\Users\\soylo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\soylo\\Desktop\\Act1.5 Continuacion\\Lorenzo-Cobos-Robert-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\Lorenzo-Cobos-Robert-1w1-Act1.5\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\LOLO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\soylo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

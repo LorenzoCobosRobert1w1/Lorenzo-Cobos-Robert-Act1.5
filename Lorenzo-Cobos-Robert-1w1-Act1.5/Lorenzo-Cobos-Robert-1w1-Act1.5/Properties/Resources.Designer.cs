@@ -61,7 +61,7 @@ namespace _1W1LORENZOCOBOSROBERTNADAMAS.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Data Source=DESKTOP-KBGFPSF\SQLEXPRESS;Initial Catalog=FacturacionDB1;Integrated Security=True;Trust Server Certificate=True.
+        ///   Busca una cadena traducida similar a Data Source=DESKTOP-TAPALGC\SQLEXPRESS;Initial Catalog=FacturacionDB;Integrated Security=True;Trust Server Certificate=True.
         /// </summary>
         internal static string CadenaConexionLocal {
             get {
